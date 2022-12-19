@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap');
+:root{
+    /* light color palletes */
+    --light-bg:#fff;
+    --icon-cycle-bg:#eee;
+    --color2:#666666;
+
+
+    /* ends here */
+    /* intersection color palletes */
+    --color1:#ffb400;
+    /* dark color palletes */
+    --dark-bg:#111111;
+    --color3:#dddddd;
+    --icon-cycle-dk:#222222;
+
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    color: var(--color2);
+}
+
+body{
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+}
+.container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(8,12.5%);
+    grid-gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* background-color: red; */
+    height: 100vh;
+    /* grid-template-rows:1fr; */
+    /* display: flex;
+    flex-direction: row;
+     */
+    }
+    .heading-yanjye{
+        display: flex;
+        flex-direction: row;
+        position:relative;
+        justify-content: center;
+        align-items: center;
+        /* align-self: center; */
+        grid-area: 1/1/3/12;
+        /* background-color: royalblue; */
+        width: 100%;
+    }
+    .flexcenter{
+        width: 100%;
+        position: absolute;
+        display:flex
+        
+    }
+
+    .flexcenter label{
+        font-family: 'Poppins', sans-serif;
+        color: var(--color2);
+        font-size: 90px;
+        font-weight: 900;  
+        opacity: 0.06;
+        margin-left: 30vw;
+        /* width: 0%; */
+    }
+    .flexcenter .about-label{
+        font-size: 60px;
+        z-index:1;
+        opacity: 1;
+        position: absolute;
+        top:4vh;
+        left: 6vw;
+        width: 100%;
+    }
+    .about-label span{
+        font-size: 60px;
+        z-index:2;
+        opacity: 1;
+        position: absolute;
+        
+        
+        color: var(--color1);
+    }
+    .title{
+        /* width: 607px; */
+        /* height: 180px; */
+        
+        height: 180px;
+        width: 607px;
+        left: 430px;
+        top: 17px;
+        
+
+    }
+
+    .main-content{
+        /* background-color: #d9d9d9; */
+        display: flex;
+        flex-direction: row; 
+        grid-area: 3/2/8/12;
+        width: 100%;
+        position: relative;
+}
+.leftdiv{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.leftupper{
+    height: 15%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+}
+.lefttwins{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    height: 50%;
+    
+    
+}
+.lefttwins label{
+    line-height: 40px;
+}
+
+.twin1{
+    width: 50%;
+
+}
+.twin2{
+    width: 50%;
+}
+
+/* cta */
+.cta-circle{
+    /* margin-left: 6vw; */
+    font-family: 'Poppins', sans-serif;
+    /* width: 40%; */
+    height: 3vh;
+    position: relative;
+    display: flex;
+    
+}
+.cta{
+   width: 40%; 
+   border: 1px solid var(--color1);
+   border-radius: 50px;
+   padding: 7px;
+   position: absolute;
+   
+   
+}
+.cta:hover{
+    background-color: var(--color1);
+    border: none;
+}
+.cta label{
+    margin-left: 20px;
+    
+}
+
+.icon-yanjye{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50% 50%;
+    padding: 10px;
+    background-color: var(--color1);
+    position:absolute;
+    z-index: 2;
+    width: 40px;
+    left: 12.3vw;
+    height: 40px;
+    
+}
+.icon-yanjye i{
+    color: var(--light-bg);
+    font-size: 15px;
+}
+/* ends here */
+/* RIGHT DIV DESIGN  */
+
+.rightdiv{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+}
+.rightdiv .rightupper,
+.rightdiv .rightdown{
+    /* background-color: #eee; */
+    height: 30%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;    
+}
+/* .rightupper .upper-left, 
+.rightupper .upper-right{
+    width: 50%;
+    
+} */
+.rightupper .upper-left,
+.rightupper .upper-right,
+.rightdown .downleft,
+.rightdown .down-right{
+    width: 45%;
+    height: 90%;
+    border-radius: 10px;
+    border: 1px solid var(--color1);
+    padding: 5px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+/* 💡💡WILL BE BACK ON THIS ONE TO MAKE A MODEL OF THE BOX */
+.upper-left h4,
+.upper-right h4,
+.downleft h4,
+.down-right h4{
+    font-family: 'Poppins', sans-serif ;
+    font-size: 46px;
+    color: var(--color1);
+}
+.upper-left span,
+.upper-right span,
+.downleft span,
+.down-right span{
+    font-size: 22px;
+    position: absolute;
+    color: var(--color1);
+    top: 2vh;
+
+}
+.upper-left label,
+.upper-right label{
+    position: absolute;
+    left: 4vw;
+    font-size: 16px;
+}
+
+
+
+
+/* ENDS HERE */
+
+ 
+
+/* side bar */
+.sidenavbar-mode{
+    display: flex;
+    flex-direction: column;
+    grid-area: 1/12/8/12;
+    height: 100vh;
+    width: 70%;
+    margin-top: 20px;
+    position: relative;
+    
+    left:62vw;
+}
+.mode{
+    height: 30%;
+    border-left-style: 62vw;
+    /* position: fixed; */
+    
+}
+.dark i{
+    font-size: 25px;
+    background-color: var(--dark-bg);
+    padding: 15px;
+    border-radius: 50% 50%;
+    color: var(--light-bg);
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    /* background-color: teal; */
+    /* align-items: center; */
+    /* position: fixed; */
+    
+}
+.sidebar .icon{
+    width: 62px;
+    height: 62px;
+    margin-top: 5px;
+}
+.icon i{
+    font-size: 25px;
+    background-color: var(--icon-cycle-bg);
+    padding: 15px;
+    border-radius: 50% 50%;
+    color: var(--color2);
+    cursor: pointer;
+}
+.icon i:hover{
+    background-color: var(--color1);
+    color: var(--light-bg);
+    cursor: pointer;
+}
+/* ends here */
+
+/* About page */
