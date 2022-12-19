@@ -138,14 +138,19 @@ img {
 .sidenavbar-mode{
     display: flex;
     flex-direction: column;
-    grid-area: 1/12/8/12;
+    /* grid-area: 1/12/8/12; */
     height: 100vh;
     width: 70%;
     margin-top: 20px;
-    
+    /* position: relative; */
+    position: fixed;
+    left:94vw;
 }
 .mode{
-    height: 30%;
+
+        height: 30%;
+
+    
 }
 .dark i{
     font-size: 25px;
@@ -158,8 +163,11 @@ img {
     display: flex;
     flex-direction: column;
     height: 70%;
+    margin-top: 28vh;
     /* background-color: teal; */
-    align-items: center;
+    /* align-items: center; */
+    /* position: fixed; */
+    position: absolute;
     
 }
 .sidebar .icon{
@@ -173,6 +181,7 @@ img {
     padding: 15px;
     border-radius: 50% 50%;
     color: var(--color2);
+    cursor: pointer;
 }
 .icon i:hover{
     background-color: var(--color1);
