@@ -17,23 +17,435 @@
     --icon-cycle-dk:#222222;
 
 }
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    color: var(--color2);
+    font-style: 'Open Sans' sans-serif;
+}
 @media screen and (min-width:320px) and (max-width:425px){
+
     /* my absolute mode icon */
-    .mode{
+   .dark{
+    width: 3vw;
         position: fixed;
-        height: 10vh;
+        right: 40vw;
         top: 1vh;
-        right: 5vw;
+   }
+ 
+    
+   .dark i{
+       font-size: 25px;
+       background-color: var(--dark-bg);
+       padding: 10px;
+       border-radius: 50% 50%;
+       color: var(--light-bg);
     }
-    .dark i{
-        font-size: 25px;
-        background-color: var(--dark-bg);
-        padding: 10px;
+    /* ends here */
+
+    .container{
+        width: 100%;
+        height: 100vh;
+        
+    }
+        .heading-yanjye{
+            margin-top: 17vh;
+            display: flex;
+                flex-direction: row;
+                position:relative;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                 
+        }
+        .flexcenter{
+            width: 100%;
+            position: absolute;
+            display:flex;
+            /* background-color: green; */
+            
+        }
+    
+        .flexcenter label{
+            font-family: 'Poppins', sans-serif;
+            color: var(--color2);
+            font-size: 50px;
+            font-weight: 900;  
+            opacity: 0.06;
+            /* margin-left: 30vw; */
+            /* width: 0%; */
+            margin: auto;
+        }
+        .flexcenter .about-label{
+            font-size: 32px;
+            z-index:1;
+            opacity: 1;
+            position: absolute;
+            top:3vh;
+            left: 25vw;
+            margin: auto;
+            width: 100%;
+        }
+        .about-label span{
+            font-size: 32px;
+            z-index:1;
+            opacity: 1;
+            position: absolute;
+            
+            
+            color: var(--color1);
+        }
+       
+    
+        .main-content{
+            /* background-color: #d9d9d9; */
+            display: flex;
+            flex-direction: column; 
+            width: 100%;
+            background-color: teal;
+    }
+    .leftdiv{
+        width: 100%;
+        padding: 20px;
+        
+        
+        
+    }
+    .leftupper{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vh;
+        width: 100%;
+       
+    }
+
+    .leftupper label{
+        height: 15%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 23px;
+        font-weight: 600;
+        width:70%;
+    }
+    .leftupper img{
+        max-width: 100%;
         border-radius: 50% 50%;
-        color: var(--light-bg);
+        height: 200px;
+        width: 200px;
+        align-self: center;
+    }
+    .lefttwins{
+        display: flex;
+        flex-direction: row;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        height: 50%;
+        background-color: tomato;
+        
+    }
+    .lefttwins label{
+        line-height: 40px;
     }
     
+    .twin1, .twin2{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+  
+    }
+    .twin1 li,
+    .twin2 li{
+        list-style: none;
+        line-height: 40px;
+    }
+    
+    /* cta */
+    .cta-circle{
+        /* margin-left: 6vw; */
+        font-family: 'Poppins', sans-serif;
+        /* width: 40%; */
+        /* height: 3vh; */
+        position: relative;
+        display: flex;
+        margin-top: 45px;
+      
+        
+        
+    }
+    .cta{
+       width: 40%; 
+       border: 1px solid var(--color1);
+       border-radius: 50px;
+       padding: 7px;
+       position: absolute;
+     
+       
+       
+    }
+    .cta:hover{
+        background-color: var(--color1);
+        border: none;
+        padding: 8px;
+    
+    }
+    .cta label{
+        margin-left: 20px;
+        
+    }
+    
+    .icon-yanjye{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50% 50%;
+        padding: 10px;
+        background-color: var(--color1);
+        position:absolute;
+        z-index: 2;
+        width: 40px;
+        left: 12.5vw;
+        height: 40px;
+        
+    }
+    .icon-yanjye i{
+        color: var(--light-bg);
+        font-size: 15px;
+    }
     /* ends here */
+    /* RIGHT DIV DESIGN  */
+    
+    .rightdiv{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 10px;
+    }
+    .rightdiv .rightupper,
+    .rightdiv .rightdown{
+        /* background-color: #eee; */
+        height: 45%;
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-content: space-between;    
+    }
+    /* .rightupper .upper-left, 
+    .rightupper .upper-right{
+        width: 50%;
+        
+    } */
+    .rightupper .upper-left,
+    .rightupper .upper-right,
+    .rightdown .downleft,
+    .rightdown .down-right{
+        width: 45%;
+        height: 90%;
+        border-radius: 10px;
+        border: 1px solid var(--color1);
+        padding: 5px;
+        position: relative;
+        font-family: 'Open Sans', sans-serif;
+    }
+    /* 💡💡WILL BE BACK ON THIS ONE TO MAKE A MODEL OF THE BOX */
+    .upper-left h4,
+    .upper-right h4,
+    .downleft h4,
+    .down-right h4{
+        font-family: 'Poppins', sans-serif ;
+        font-size: 46px;
+        color: var(--color1);
+    }
+    .upper-left span,
+    .upper-right span,
+    .downleft span,
+    .down-right span{
+        font-size: 22px;
+        position: absolute;
+        color: var(--color1);
+        top: 2vh;
+    
+    }
+    .upper-left label,
+    .upper-right label{
+        position: absolute;
+        left: 4vw;
+        font-size: 16px;
+    }
+    
+    
+    
+    
+    /* ENDS HERE */
+    
+     
+    
+     /* side bar */
+     .sidenavbar-mode{
+        height: 6vh;
+        position: fixed;
+        /* padding: 20px; */
+        bottom: 0;
+        /* margin-left: -10px; */
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    }
+    
+    
+    .sidebar{
+        display: flex;
+        justify-content: center;
+
+    }
+    .sidebar .icon{
+        width: 62px;
+        height: 62px;
+        margin-top: 5px;
+    }
+    .icon i{
+        font-size: 15px;
+        background-color: var(--icon-cycle-bg);
+        padding: 12px;
+        border-radius: 50% 50%;
+        color: var(--color2);
+        cursor: pointer;
+    }
+    .icon i:hover{
+        background-color: var(--color1);
+        color: var(--light-bg);
+        cursor: pointer;
+    }
+  
+    /* horizontal break line */
+        .hr{
+                width: 40%;
+                margin: auto;
+                opacity: .3;
+                height: 20px;
+        }
+    /* ends here */
+    /* skills div begins here */
+    .skills{
+        height: 100vh;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: thistle; */
+        padding: 0;
+    }
+    .skills .skills-heading{
+        font-family: 'poppins', sans-serif;
+        height: 20%;
+        letter-spacing: 2px;
+        
+        
+    
+    }
+    .skills .skills-cycles{
+        height: 70%;
+    }
+    .skills-cycles img{
+        max-width: 100%;
+        height: auto;
+        pointer-events: none;
+    }
+    /* ends here */
+    /* exp begins here */
+    .exp{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .exp-heading{
+        margin: auto;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 40px;
+    }
+    
+    .exp-main{
+        display: flex;
+        
+        width: 85%;
+        margin: auto;
+        padding: 5px;
+        font-family: 'Open Sans';
+        height: 100vh;
+    }
+    .exp-left,
+    .exp-right{
+        display: flex;
+        flex-direction: column;
+        width:50%;
+        /* background-color: tomato; */
+        
+    }
+    .exp-left .left-1,
+    .exp-right .left-1{
+        display: flex;
+        justify-content: space-around;
+        /* background-color: #eee; */
+        padding:5px;
+        position: relative;
+        height: 30vh;
+    }
+     .icony{
+        width: 8%;  
+        position: absolute;
+        left:10px;
+        top: 8px;   /* 💡💡my brief case and long stick  */
+    } 
+    .left-1 .aside-div{
+        width: 100%;
+        margin-left: 60px;
+        position: relative;
+    }
+     .small-heading{
+        margin-top: 5px;
+        background-color: var(--color3);
+        width: 35%;
+        border-radius: 25px ;
+        margin-bottom:10px;
+    }
+    .aside-div .small-heading label{
+        font-size: 10px;
+        padding: 10px;
+    
+    }
+    .left-1 .aside-div span{
+        font-size: 18px;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+        text-transform:uppercase;
+        
+    }
+    .aside-div .company{
+        font-size: 13px;
+        font-weight: 600;
+    
+    }
+    .aside-div p{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    #graphics-special{
+     font-size: 16px;   
+    }
+    #special1{
+        width: 27%;
+    }
+    #special2{
+        width: 30%;
+    }
+    #special3{
+        width: 24%;
+    }
+    #special4{
+        font-size: 10.5px;
+    }
+    ends here
 }
 @media screen and (min-width:426px) and (max-width:768px){
 
@@ -41,13 +453,31 @@
 @media screen and (min-width:769px) and (max-width:1023px){
 
 }
-@media screen and (min-width:1024px) and (max-width:1390px) {
+@media screen and (min-width:1024px) and (max-width:1439px){
+   
     *{
         margin: 0;
         padding:0;
         box-sizing: border-box;
         color: var(--color2);
         font-style: 'Open Sans' sans-serif;
+    }
+    .leftupper img{
+        display: none;
+       }
+    .dark{
+        width: 3vw;
+        position: fixed;
+        right: 2vw;
+        top: 1vh;
+        
+    }
+    .dark i{
+        font-size: 25px;
+        background-color: var(--dark-bg);
+        padding: 10px;
+        border-radius: 50% 50%;
+        color: var(--light-bg);
     }
     
     body{
@@ -111,17 +541,7 @@
             
             color: var(--color1);
         }
-        .title{
-            /* width: 607px; */
-            /* height: 180px; */
-            
-            height: 180px;
-            width: 607px;
-            left: 430px;
-            top: 17px;
-            
-    
-        }
+       
     
         .main-content{
             /* background-color: #d9d9d9; */
@@ -149,7 +569,7 @@
         flex-direction: row;
         font-family: 'Open Sans', sans-serif;
         font-size: 14px;
-        height: 50%;
+        height: 60%;
         
         
     }
@@ -157,9 +577,16 @@
         line-height: 40px;
     }
     
-    .twin1{
+    .twin1, .twin2{
         width: 50%;
-    
+        display: flex;
+        flex-direction: column;
+  
+    }
+    .twin1 li,
+    .twin2 li{
+        list-style: none;
+        line-height: 40px;
     }
     .twin2{
         width: 50%;
@@ -351,7 +778,7 @@
     /* ends here */
     /* skills div begins here */
     .skills{
-        height: 100vh;
+        height: 80vh;
         width: 95%;
         display: flex;
         flex-direction: column;
@@ -370,13 +797,11 @@
     }
     .skills .skills-cycles{
         height: 70%;
-        /* background: #eee; */
-        width: 70%;
     }
     .skills-cycles img{
         max-width: 100%;
-        margin-left: 30px;
-        height: 25vh;
+        height: 20vh;
+        margin-left: 4.5vw;
         pointer-events: none;
     }
     /* ends here */
@@ -475,3 +900,431 @@
     }
     /* ends here */
 }
+@media screen and (min-width:1440px) and (max-width:2560px){
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+        color: var(--color2);
+        font-style: 'Open Sans' sans-serif;
+    }
+    .leftupper img{
+        display: none;
+       }
+    
+    .dark{
+        width: 3vw;
+        position: fixed;
+        right: 2vw;
+        top: 1vh;
+        
+    }
+    .dark i{
+        font-size: 25px;
+        background-color: var(--dark-bg);
+        padding: 10px;
+        border-radius: 50% 50%;
+        color: var(--light-bg);
+    }
+        body{
+            /* overflow: hidden; */
+            overflow-x: hidden;
+            background-image: url(bg.png);
+            background-repeat: no-repeat;
+        }
+        .container{
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: repeat(8,12.5%);
+            grid-gap: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            height: 90vh;
+            }
+            .heading-yanjye{
+                display: flex;
+                flex-direction: row;
+                position:relative;
+                justify-content: center;
+                align-items: center;
+                grid-area: 1/1/3/12;
+                width: 100%;
+                margin-left: 5vw;   
+            }
+            .flexcenter{
+                width: 100%;
+                position: absolute;
+                display:flex;
+                
+            }
+        
+            .flexcenter label{
+                font-family: 'Poppins', sans-serif;
+                color: var(--color2);
+                font-size: 90px;
+                font-weight: 900;  
+                opacity: 0.06;
+                margin-left: 30vw;
+                
+                /* width: 0%; */
+            }
+            .flexcenter .about-label{
+                font-size: 60px;
+                z-index:1;
+                opacity: 1;
+                position: absolute;
+                top:2.5vh;
+                left: 5vw;
+                width: 20%;
+            }
+            .about-label span{
+                font-size: 60px;
+                z-index:2;
+                opacity: 1;
+                position: absolute;
+                margin-left:1vw;
+                
+                color: var(--color1);
+            }
+         
+        
+            .main-content{
+                /* background-color: #d9d9d9; */
+                display: flex;
+                flex-direction: row; 
+                grid-area: 3/3/7/12;
+                width: 100%;
+                position: relative;
+        }
+        .leftdiv{
+            width: 50%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            
+            
+        }
+        .leftupper{
+            height: 15%;
+            font-family: 'Poppins', sans-serif;
+            font-size: 28px;
+            font-weight: 500;
+        }
+        .lefttwins{
+            display: flex;
+            flex-direction: row;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            height: 50%;
+            
+            
+        }
+        .lefttwins label{
+            line-height: 40px;
+        }
+        
+        .twin1{
+            width: 50%;
+        
+        }
+        .twin2{
+            width: 50%;
+        }
+        
+        /* cta */
+        .cta-circle{
+            /* margin-left: 6vw; */
+            font-family: 'Poppins', sans-serif;
+            /* width: 40%; */
+            /* height: 3vh; */
+            position: relative;
+            display: flex;
+            margin-top: 45px;
+            
+            
+        }
+        .cta{
+            width: 41.5%;
+            border: 1px solid var(--color1);
+            border-radius: 50px;
+            padding: 7px;
+            position: absolute;
+         
+           
+           
+        }
+        .cta:hover{
+            background-color: var(--color1);
+            border: none;
+            padding: 8px;
+        
+        }
+        .cta label{
+            margin-left: 20px;
+            
+        }
+        
+        .icon-yanjye{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50% 50%;
+            padding: 10px;
+            background-color: var(--color1);
+            position:absolute;
+            z-index: 2;
+            width: 40px;
+            left: 12.5vw;
+            height: 40px;
+            
+        }
+        .icon-yanjye i{
+            color: var(--light-bg);
+            font-size: 15px;
+        }
+        /* ends here */
+        /* RIGHT DIV DESIGN  */
+        
+        .rightdiv{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            padding: 10px;
+        }
+        .rightdiv .rightupper,
+        .rightdiv .rightdown{
+            /* background-color: #eee; */
+            height: 45%;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-content: space-between;    
+        }
+        /* .rightupper .upper-left, 
+        .rightupper .upper-right{
+            width: 50%;
+            
+        } */
+        .rightupper .upper-left,
+        .rightupper .upper-right,
+        .rightdown .downleft,
+        .rightdown .down-right{
+            width: 45%;
+            height: 90%;
+            border-radius: 10px;
+            border: 1px solid var(--color1);
+            padding: 5px;
+            position: relative;
+            font-family: 'Open Sans', sans-serif;
+        }
+        /* 💡💡WILL BE BACK ON THIS ONE TO MAKE A MODEL OF THE BOX */
+        .upper-left h4,
+        .upper-right h4,
+        .downleft h4,
+        .down-right h4{
+            font-family: 'Poppins', sans-serif ;
+            font-size: 46px;
+            color: var(--color1);
+        }
+        .upper-left span,
+        .upper-right span,
+        .downleft span,
+        .down-right span{
+            font-size: 22px;
+            position: absolute;
+            color: var(--color1);
+            top: 2vh;
+        
+        }
+        .upper-left label,
+        .upper-right label{
+            position: absolute;
+            left: 4vw;
+            font-size: 16px;
+        }
+        
+        
+        
+        
+        /* ENDS HERE */
+        
+         
+        
+        /* side bar */
+        .sidenavbar-mode{
+            display: flex;
+            flex-direction: column;
+            /* grid-area: 1/12/8/12; */
+            height: 100vh;
+            width: 70%;
+            margin-top: 20px;
+            /* position: relative; */
+            position: fixed;
+            left:94vw;
+        }
+        .sidebar{
+            display: flex;
+            flex-direction: column;
+            height: 70%;
+            margin-top: 20vh;
+            /* background-color: teal; */
+            /* align-items: center; */
+            /* position: fixed; */
+            position: absolute;
+            
+        }
+        .sidebar .icon{
+            width: 62px;
+            height: 62px;
+            margin-top: 5px;
+        }
+        .icon i{
+            font-size: 25px;
+            background-color: var(--icon-cycle-bg);
+            padding: 15px;
+            border-radius: 50% 50%;
+            color: var(--color2);
+            cursor: pointer;
+        }
+        .icon i:hover{
+            background-color: var(--color1);
+            color: var(--light-bg);
+            cursor: pointer;
+        }
+        /* ends here */
+        /* horizontal break line */
+            .hr{
+                    width: 30%;
+                    margin: auto;
+                    opacity: .1;
+            }
+        /* ends here */
+        /* skills div begins here */
+        .skills{
+            height: 60vh;
+            width: 94%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background-color: thistle; */
+            padding: 0;
+        }
+        .skills .skills-heading{
+            font-family: 'poppins', sans-serif;
+            height: 20%;
+            letter-spacing: 2px;
+            
+            
+        
+        }
+        .skills .skills-cycles{
+            height: 70%;
+            /* background: #eee; */
+            width: 70%;
+        }
+        .skills-cycles img{
+            max-width: 100%;
+            margin-left: 4.5vw;
+            height: 20vh;
+            pointer-events: none;
+        }
+        /* ends here */
+        /* exp begins here */
+        .exp{
+            margin-top: 0vh;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .exp-heading{
+            margin: auto;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 40px;
+        }
+        
+        .exp-main{
+            display: flex;
+            /* background-color: tomato; */
+            width:65%;
+            margin: auto;
+            padding: 5px;
+            font-family: 'Open Sans';
+            height: 60vh;
+        }
+        .exp-left,
+        .exp-right{
+            display: flex;
+            flex-direction: column;
+            width:50%;
+            /* background-color: tomato; */
+            
+        }
+        .exp-left .left-1,
+        .exp-right .left-1{
+            display: flex;
+            justify-content: space-around;
+            /* background-color: #eee; */
+            padding:5px;
+            position: relative;
+            height: 30vh;
+        }
+         .icony{
+            width: 8%;  
+            position: absolute;
+            left:10px;
+            top: 8px;   /* 💡💡my brief case and long stick  */
+        } 
+        .left-1 .aside-div{
+            width: 100%;
+            margin-left: 80px;
+            position: relative;
+        }
+         .small-heading{
+            margin-top: 5px;
+            background-color: var(--color3);
+            width: 35%;
+            border-radius: 25px ;
+            margin-bottom:10px;
+        }
+        .aside-div .small-heading label{
+            font-size: 10px;
+            padding: 10px;
+        
+        }
+        .left-1 .aside-div span{
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+            text-transform:uppercase;
+            
+        }
+        .aside-div .company{
+            font-size: 13px;
+            font-weight: 600;
+        
+        }
+        .aside-div p{
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        #graphics-special{
+         font-size: 16px;   
+        }
+        #special1{
+            width: 30%;
+        }
+        #special2{
+            width: 30%;
+        }
+        #special3{
+            width: 24%;
+        }
+        #special4{
+            font-size: 10.5px;
+        }
+        /* ends here */
+    }
