@@ -607,7 +607,7 @@
 }
 
 /* medium lapiez */
-@media screen and (min-width:1024px) and (max-width:1390px){
+@media screen and (min-width:1024px) and (max-width:1439px){
     /* my absolute mode icon */
     .mode{
         position: fixed;

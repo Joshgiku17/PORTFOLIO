@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+:root{
+    /* light color palletes */
+    --light-bg:#fff;
+    --icon-cycle-bg:#eee;
+    --color2:#666666;
+    --color3:#d9d9d9;
+
+
+    /* ends here */
+    /* intersection color palletes */
+    --color1:#ffb400;
+    /* dark color palletes */
+    --dark-bg:#111111;
+    --color3:#dddddd;
+    --icon-cycle-dk:#222222;
+
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    color: var(--color2);
+}
+
+body{
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    
+}
+.container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(8,12.5%);
+    grid-gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100vh;
+    }
+    .heading-yanjye{
+        display: flex;
+        flex-direction: row;
+        position:relative;
+        justify-content: center;
+        align-items: center;
+        /* align-self: center; */
+        grid-area: 1/1/3/12;
+        /* background-color: royalblue; */
+        width: 100%;
+    }
+    .flexcenter{
+        width: 100%;
+        position: absolute;
+        display:flex;
+        justify-content: center;
+    }
+
+    .flexcenter h4{
+        font-family: 'Poppins', sans-serif;
+        color: var(--color2);
+        font-size: 120px;
+        font-weight: 900;  
+        opacity: 0.06;
+        background-color: #eee;
+        text
+    
+    }
+    .flexcenter .about-label{
+        font-family: 'Poppins', sans-serif;
+        font-size: 60px;
+        font-weight: 900;  
+        z-index:1;
+        opacity: 1;
+        position: absolute;
+        top:7vh;
+        left: 30vw;
+        width: 100%;
+    }
+    .about-label span{
+        font-size: 60px;
+        z-index:2;
+        opacity: 1;
+        position: absolute;
+        color: var(--color1);
+    }
+   
+
+    .main-content{
+        /* background-color: #d9d9d9; */
+        display: flex;
+        flex-direction: row; 
+        grid-area: 3/2/8/12;
+        width: 100%;
+        position: relative;
+        font-family: 'Open Sans', sans-serif;
+}
+.left-div{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.left-div h4{
+    font-size: 24px;
+    margin-bottom: 2vh;
+    font-family: 'Poppins', sans-serif;
+}
+.left-div p{
+    font-size: 15px;
+    margin-bottom: 7vh;
+}
+.address-div{
+    display: flex;
+    flex-direction: column;
+    height: 35vh; 
+}
+.address-div .box1,
+.address-div .box2,
+.address-div .box3{
+    display: flex;
+    width: 100%;
+    height:15vh;
+    justify-content: space-between;
+}
+
+.box1 .iconz,
+.box2 .iconz,
+.box3 .iconz {
+    width: 15%;
+}
+.box1 .iconz  i,
+.box2 .iconz i,
+.box3 .iconz i{
+    font-size: 35px;
+    color: var(--color1);
+    cursor: pointer;
+}
+.box1 .aside,
+.box2 .aside,
+.box3 .aside{    
+    width: 80%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.aside span{
+    font-weight: 600;
+}
+.box3 .iconz i{
+    font-size: 40px;
+}
+.soshomedia{
+    height: 100vh;
+    
+    padding: 5px;
+}
+
+.soshomedia a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+.soshomedia i{
+    font-size: 15px;
+    background-color: var(--icon-cycle-bg);
+    padding: 15px;
+    border-radius: 50% 50%;
+    color: var(--color2);
+    cursor: pointer;
+    
+}
+
+
+
+
+.right{
+    /* background-color: navy; */
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.right form{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width:100%;
+    padding: 5px;
+}
+.form .row-inputs{
+    display: flex;
+    margin-bottom: 2vh;
+    width: 100%;
+    justify-content: space-around;
+}
+.row-inputs #email,
+.row-inputs #name{
+    width: 40%;
+    border:1px solid var(--color3);
+    background-color: transparent;
+    border-radius: 50px 50px;
+}
+
+.form input{
+    width: 90%;
+    align-self: center;
+    padding: 10px;
+    border-radius: 50px 50px;
+    outline: none;
+    border: 1px solid var(--color3);
+    background-color: transparent;
+    margin-bottom: 5vh;
+}
+.form textarea{
+    width: 90%;
+    align-self: center;
+    padding: 10px;
+    border-radius: 20px 20px;
+    outline: none;
+    border: 1px solid var(--color3);
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    resize: none;
+    height: 25vh;
+}
+
+/* cta */
+.cta-circle{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: flex;
+    
+    
+}
+.cta{
+    width: 27.5%; 
+    border: 1px solid var(--color1);
+    border-radius: 50px;
+    padding: 12px;
+    position: absolute;
+    
+    margin-left: 3vw;
+ 
+   
+   
+}
+.cta:hover{
+    background-color: var(--color1);
+    border: none;
+    padding: 13px;
+
+}
+.cta label{
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.icon-yanjye{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50% 50%;
+    padding: 10px;
+    background-color: var(--color1);
+    position:absolute;
+    z-index: 2;
+    width: 48px;
+    left: 15.5vw;
+    height: 48px;
+    top: 0.2vh;
+}
+.icon-yanjye i{
+    color: var(--light-bg);
+    font-size: 15px;
+}
+/* ends here */
+
+
+
+
+
+/* ENDS HERE */
+
+ 
+
+/* side bar */
+.sidenavbar-mode{
+    display: flex;
+    flex-direction: column;
+    /* grid-area: 1/12/8/12; */
+    height: 100vh;
+    width: 70%;
+    margin-top: 20px;
+    /* position: relative; */
+    position: fixed;
+    left:94vw;
+}
+.mode{
+
+        height: 30%;
+
+    
+}
+.dark i{
+    font-size: 25px;
+    background-color: var(--dark-bg);
+    padding: 15px;
+    border-radius: 50% 50%;
+    color: var(--light-bg);
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    margin-top: 20vh;
+    /* background-color: teal; */
+    /* align-items: center; */
+    /* position: fixed; */
+    position: absolute;
+    
+}
+.sidebar .icon{
+    width: 62px;
+    height: 62px;
+    margin-top: 5px;
+}
+.icon i{
+    font-size: 25px;
+    background-color: var(--icon-cycle-bg);
+    padding: 15px;
+    border-radius: 50% 50%;
+    color: var(--color2);
+    cursor: pointer;
+}
+.icon i:hover{
+    background-color: var(--color1);
+    color: var(--light-bg);
+    cursor: pointer;
+}
+
+/* ENDS HERE */
